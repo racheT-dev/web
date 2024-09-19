@@ -2,13 +2,30 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>ArakelovE</title>
+    <title>2 Пара</title>
+    <link rel="stylesheet" href="indcss.css">
 </head>
 
 
-<body style="background-color:rgb(213, 232, 253)">
-<h1> Работа #1 </h1>
+<body style="background-color:rgb(255, 255, 255)">
+    <header class="header">
+        <div class="header-content" >
+            <div class="logo"></div>
+            <div class="site-link">
+                <a href = "https://github.com/racheT-dev"> rachet's GitHub</a>
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="secindex.html">Раз</a></li>
+                    <li><a href="./about/third.html">Два</a></li>
+                    <li><a href="./about/lower/fourth.html">Три</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
 <ul>
+    <div class="content">
     <li>
         <a href="http://kubsu.ru">Аблосютный КУБГУ</a>
     </li>
@@ -58,7 +75,7 @@
     </li>
 
     <li>
-        <img src="tort.jpg" width=500 height=500 usemap="#tort" alt="tortik">
+        <img src="tort.jpg" width=400 height=300 usemap="#tort" alt="tortik">
 
         <map name="tort">
             <area shape="circle" coords="250,250,180" href="https://voshod-kulinar.ru/" alt="tort">
@@ -93,9 +110,61 @@
     <li>
         <a href="ftp://username:password@ftp.example.com/path/to/file.zip">FTP сайт(нет)</a>
     </li>
+</div>
+<div class="content">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Описание услуги</th>
+                <th>Сроки/дней</th>
+                <th>Цена/рублей</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Диагностика</td>
+                <td>Полная диагностика комьютера на наличие неиспарвностей</td>
+                <td>1-2</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>Плановое обслуживание</td>
+                <td>Полная очистка и замена всех технических смазок</td>
+                <td>1-3</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>Настройка системы</td>
+                <td>Настройка всех узловых частей компьютера</td>
+                <td>1 </td>
+                <td>600</td>
+            </tr>
+            <tr>
+                <td>Сборка компьютера под заказ</td>
+                <td>Подбор комплектующих под личные задачи и сборка</td>
+                <td>3-5</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>Установка  Windows</td>
+                <td>Установка и активация системы официальным ключом</td>
+                <td>1</td>
+                <td>1800</td>
+            </tr>
+            <tr>
+                <td>Установка антивирусного ПО</td>
+                <td>Установка антивирусного ПО с полным пакетом услуг на 1 год</td>
+                <td>1</td>
+                <td>1000</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 </ul>
-<br>
-<br>
+
+
+<div class="form">
 <h3>Форма</h3>
 <form>
     <label for="FIO">ФИО</label><br>
@@ -118,7 +187,7 @@
     <label for="man">Мужской</label><br>
 
     <label for="languages">Выберите язык программирования:</label>
-    <select id="languages" name="languages">
+    <select id="languages" multiple="languages">
         <option value="pascal">Pascal</option>
         <option value="c">C</option>
         <option value="cpp">C++</option>
@@ -140,5 +209,12 @@
 
     <button type="submit">Сохранить</button>
 </form>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; С нескрываемым рвением: Аракелов Эдуард</p>
+    </div>
+</footer>
 </body>
 </html>
